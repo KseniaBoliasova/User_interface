@@ -13,6 +13,13 @@
 		7BB75A42272C0B8D00660CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB75A41272C0B8D00660CAC /* Assets.xcassets */; };
 		7BB75A45272C0B8D00660CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB75A43272C0B8D00660CAC /* LaunchScreen.storyboard */; };
 		7BB75A4D272C0C0400660CAC /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB75A4C272C0C0400660CAC /* LoginFormController.swift */; };
+		7BDAEA6E273E6A67001D0521 /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAEA6D273E6A67001D0521 /* GroupTableViewController.swift */; };
+		7BDAEA70273E6A8E001D0521 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAEA6F273E6A8E001D0521 /* GroupTableViewCell.swift */; };
+		7BDAEA7227464551001D0521 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAEA7127464551001D0521 /* Model.swift */; };
+		7BDAEA7427465416001D0521 /* FriendsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAEA7327465416001D0521 /* FriendsCollectionViewController.swift */; };
+		7BDAEA762746545F001D0521 /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAEA752746545F001D0521 /* FriendsCollectionViewCell.swift */; };
+		7BF39A57273A86F900A7E441 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF39A56273A86F900A7E441 /* FriendsTableViewCell.swift */; };
+		7BF39A59273A889600A7E441 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF39A58273A889600A7E441 /* FriendsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		7BB75A44272C0B8D00660CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB75A46272C0B8D00660CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB75A4C272C0C0400660CAC /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		7BDAEA6D273E6A67001D0521 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		7BDAEA6F273E6A8E001D0521 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		7BDAEA7127464551001D0521 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7BDAEA7327465416001D0521 /* FriendsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewController.swift; sourceTree = "<group>"; };
+		7BDAEA752746545F001D0521 /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7BF39A56273A86F900A7E441 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		7BF39A58273A889600A7E441 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +70,9 @@
 		7BB75A37272C0B8800660CAC /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				7BDAEA7127464551001D0521 /* Model.swift */,
 				7BB75A38272C0B8800660CAC /* AppDelegate.swift */,
+				7BBDD153273827C800339B73 /* Section */,
 				7BB75A3A272C0B8800660CAC /* SceneDelegate.swift */,
 				7BB75A3E272C0B8800660CAC /* Main.storyboard */,
 				7BB75A4C272C0C0400660CAC /* LoginFormController.swift */,
@@ -65,6 +81,35 @@
 				7BB75A46272C0B8D00660CAC /* Info.plist */,
 			);
 			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		7BBDD153273827C800339B73 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				7BF39A5B273A8BA900A7E441 /* Group */,
+				7BF39A5A273A8B9E00A7E441 /* Friends */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		7BF39A5A273A8B9E00A7E441 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				7BDAEA752746545F001D0521 /* FriendsCollectionViewCell.swift */,
+				7BDAEA7327465416001D0521 /* FriendsCollectionViewController.swift */,
+				7BF39A56273A86F900A7E441 /* FriendsTableViewCell.swift */,
+				7BF39A58273A889600A7E441 /* FriendsTableViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		7BF39A5B273A8BA900A7E441 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				7BDAEA6F273E6A8E001D0521 /* GroupTableViewCell.swift */,
+				7BDAEA6D273E6A67001D0521 /* GroupTableViewController.swift */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDAEA7427465416001D0521 /* FriendsCollectionViewController.swift in Sources */,
+				7BDAEA70273E6A8E001D0521 /* GroupTableViewCell.swift in Sources */,
+				7BDAEA762746545F001D0521 /* FriendsCollectionViewCell.swift in Sources */,
 				7BB75A4D272C0C0400660CAC /* LoginFormController.swift in Sources */,
 				7BB75A39272C0B8800660CAC /* AppDelegate.swift in Sources */,
+				7BF39A57273A86F900A7E441 /* FriendsTableViewCell.swift in Sources */,
 				7BB75A3B272C0B8800660CAC /* SceneDelegate.swift in Sources */,
+				7BF39A59273A889600A7E441 /* FriendsTableViewController.swift in Sources */,
+				7BDAEA6E273E6A67001D0521 /* GroupTableViewController.swift in Sources */,
+				7BDAEA7227464551001D0521 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +349,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +378,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
