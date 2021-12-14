@@ -15,7 +15,16 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBAction func loginButtonPressed(_ sender: Any) {
         }
-
+    
+    class Session {
+        
+        static let instance = Session()
+        
+        private init(){}
+        
+        var token = ""
+        var userId = 0
+    }
 
 
 
